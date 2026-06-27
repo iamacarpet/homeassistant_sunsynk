@@ -1,0 +1,22 @@
+{
+    "config": {
+        "step": {
+            "user": {
+                "title": "Synsynk Solar Inverter",
+                "description": "Configure the path to the solar status JSON file written by your Solarman dongle script.",
+                "data": {
+                    "file_path": "Status File Path"
+                },
+                "data_description": {
+                    "file_path": "Absolute path to the status file (e.g. /tmp/solar.status). The directory must exist; the file itself will be created by your external script."
+                }
+            }
+        },
+        "error": {
+            "invalid_path": "The parent directory does not exist or is not accessible."
+        },
+        "abort": {
+            "already_configured": "This file path is already configured."
+        }
+    }
+}
